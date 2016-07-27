@@ -336,3 +336,8 @@ body#afui .splt {
     margin-bottom: 6px;
   }
 }
+.list .d-margins,
+.button-bar .d-margins,
+.tabs .d-margins {
+  margin: 0;
+}
