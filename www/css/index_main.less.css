@@ -285,12 +285,10 @@ body#afui .splt {
 }
 @media all {
   .bgPin {
-    background-color: ;
-    background-image: url("../img/bgGreen.jpg");
+    background-color: #000000;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
   }
 }
 .left-receptacle {
