@@ -320,11 +320,6 @@ body#afui .splt {
   display: inline-block;
   width: 100%;
 }
-.list .d-margins,
-.button-bar .d-margins,
-.tabs .d-margins {
-  margin: 0;
-}
 @media all {
   .wrapping-col > .d-margins,
   .wrapping-col > .afScrollPanel > .d-margins {
