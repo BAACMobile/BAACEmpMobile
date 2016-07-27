@@ -60,7 +60,7 @@
 
      function CheckPin(){
          if(InputKeyPin == "1234"){
-             alert("WelCome");
+             //alert("WelCome");
              window.location.href = 'MainMenu.html';
          }
      }
