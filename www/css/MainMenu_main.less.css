@@ -292,3 +292,115 @@ body#afui .splt {
 .upage-outer.fixed-header-footer {
   position: static;
 }
+.uib_row_1 > .col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media all and (min-width: 0px) {
+  .uib_col_2 {
+    width: 50%;
+  }
+  .urow.cright > .uib_col_2 {
+    padding-left: 0px !important;
+  }
+  .urow:not(.cright) > .uib_col_2 {
+    clear: left;
+    padding-left: 0px !important;
+  }
+  .uib_col_1 {
+    width: 50%;
+  }
+  .urow:not(.cright) > .uib_col_1 {
+    padding-right: 0px !important;
+  }
+  .urow.cright > .uib_col_1 {
+    clear: right;
+    padding-right: 0px !important;
+  }
+}
+@media all and (max-width: 0px) {
+  .col-0_6-12 {
+    width: auto;
+    float: none !important;
+    clear: both;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .col-0_6-12 {
+    width: auto;
+    float: none !important;
+    clear: both;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+@media all {
+  .grid-pad {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (min-width: 0px) {
+  .row-height-1 > .col > .content-area {
+    min-height: 100px;
+  }
+}
+.vertical-col > ion-list.widget,
+.vertical-col > .widget.item-radio,
+.vertical-col > .widget.item-toggle,
+.vertical-col > .widget.list,
+.vertical-col > .widget.item-select,
+.vertical-col > .widget.item-checkbox,
+.vertical-col > .widget.button {
+  margin-left: 0;
+  display: inline-block;
+  width: 100%;
+}
+.vertical-col > .widget.item.range,
+.vertical-col > .widget.button-bar,
+.vertical-col > .widget.tabs {
+  margin-left: 0;
+  width: 100%;
+}
+.vertical-col > .widget.item-input {
+  margin-left: 0;
+  display: inline-flex;
+  width: 100%;
+}
+.vertical-col > .widget.item-input.item-floating-label,
+.vertical-col > .widget.item-input.item-stacked-label {
+  margin-left: 0;
+  display: inline-block;
+  width: 100%;
+}
+@media all {
+  .wrapping-col > .d-margins,
+  .wrapping-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .wrapping-col > .d-margins,
+  .wrapping-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .d-margins {
+    margin-top: 5px;
+    margin-bottom: 6px;
+  }
+}
+.RowbtnMainMenu {
+  position: absolute;
+  top: 30vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+@media all {
+  .roundBtnMainmenu {
+    height: 100px !important;
+    width: 140px !important;
+    border-radius: 0px !important;
+  }
+}
