@@ -13,7 +13,7 @@
     $(document).on("click", ".uib_w_2", function(evt)
     {
          /*global activate_page */
-         activate_page("#mainpage");
+         activate_page("#MainMenu.html");
          return false;
     });
 
