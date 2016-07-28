@@ -10,10 +10,20 @@
 
 
      /* button  Button */
+
+
+        /* button  Button */
     $(document).on("click", ".uib_w_2", function(evt)
     {
+        /* your code goes here */
+         return false;
+    });
+
+        /* button  #BtnBack */
+    $(document).on("click", "#BtnBack", function(evt)
+    {
          /*global activate_page */
-         activate_page("#MainMenu.html");
+         window.location.href = 'MainMenu.html';
          return false;
     });
 
