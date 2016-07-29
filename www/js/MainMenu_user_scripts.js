@@ -29,7 +29,7 @@
     $(document).on("click", "#btnLoanFun", function(evt)
     {
         /* your code goes here */
-        window.location.href = 'LoanFun.html';
+        window.location.href = 'LoanFund.html';
          return false;
     });
 
