@@ -15,25 +15,134 @@
     <script type="application/javascript" src="marginal/marginal-position.js"></script>
     <script type="application/javascript" src="ionic/js/ionic.bundle.js"></script>
     <script type="application/javascript" src="js/Benefits_init_services.js"></script>
+    <script type="application/javascript" src="js/Benefits_user_scripts.js"></script>
+
+    <style>
+      table {
+        width:100%;
+        }
+        table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        }
+        th, td {
+        padding: 5px;
+        text-align: left;
+        }
+        table#bf01 tr:nth-child(even) {
+        background-color: #eee;
+        }
+        table#bf01 tr:nth-child(odd) {
+        background-color:#fff;
+        }
+        table#bf01 th {
+        background-color: skyblue;
+        color: white;
+        }
+
+
+    </style>
+
   </head>
 
   <body ng-app="myApp">
 
-    <div class="upage" id="mainpage">
+    <div class="upage" id="mainpage" style="background-image: url(img/bgGreen.jpg)">
       <div class="upage-outer fixed-header-footer">
-        <div class="upage-content ac0 content-area vertical-col left" id="page_78_58"></div>
+        <br>
+        <div class="upage-content ac0 content-area vertical-col" id="page_78_58">
+
+          <br>
+          <div class="widget uib_w_5 scale-image d-margins" data-uib="media/img" data-ver="0" style=" width:auto">
+            <figure class="figure-align">
+              <img src="images/Exclaim.png">
+
+              <figcaption data-position="bottom"></figcaption>
+            </figure>
+          </div>
+
+          <br>
+            <div class="tarea widget uib_w_1 d-margins txtHeader" data-uib="media/text" data-ver="0" name="uib_w_1" style="background-color:rgba(0,0,0,0.2);border-radius: 10px;">
+                <br>
+                <div style="display: table;margin-right: auto;margin-left: auto;width:auto">
+                    <table style="border:0px"  >
+                        <tr>
+                            <td  style="border:0px">
+                                เลขที่บัญชีเงินฝาก :
+                            </td>
+                            <td style="border:0px">
+                                test xxx xxx xxx xxx
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border:0px">
+                                ข้อมูล ณ วันที่ :
+                            </td >
+                            <td style="border:0px">
+                                test xx/xx/xxxx
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                <br>
+            </div>
+          <br>
+          <div class="tarea widget uib_w_1 d-margins txtHeader" data-uib="media/text" data-ver="0" name="uib_w_1" style="background-color:rgba(0,0,0,0.2);border-radius: 10px;">
+            <br>
+            <div style="display: table;margin-right: auto;margin-left: auto;width:auto">
+              <table id="bf01">
+                <tbody>
+                  <tr>
+                    <th>
+                      รายงาน
+                    </th>
+                    <th>
+                      จำนวนเงิน
+                    </th>
+                    <th>
+                      วันที่ได้รับเงิน
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>ค่าเช่าบ้าน
+                    </td>
+                    <td>3,300.00
+                    </td>
+                    <td>01/07/2016
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>รักษาพยาบาล
+                    </td>
+                    <td>1,500.00
+                    </td>
+                    <td>01/07/2016
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ค่าเล่าเรียนบุตร
+                    </td>
+                    <td>300.00
+                    </td>
+                    <td>01/07/2016
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+          </div>
+        </div>
+
         <ion-header-bar class="bar inner-element uib_w_1 bar-positive bar-header" data-uib="ionic/header" data-ver="0">
           <div class="buttons widget-container content-area horiz-area wrapping-col">
-            <button class="button widget uib_w_2 d-margins" data-uib="ionic/button" data-ver="0">Button</button>
+            <button class="button widget uib_w_2 d-margins ion ion-android-drawer icon-only" data-uib="ionic/button" data-ver="0" id="btnback"></button>
           </div>
           <h1 class="title">สวัสดิการ</h1>
           <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
         </ion-header-bar>
-        <ion-footer-bar class="bar inner-element uib_w_3 bar-positive bar-footer" data-uib="ionic/footer" data-ver="0">
-          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
-          <h1 class="title">footer</h1>
-          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
-        </ion-footer-bar>
+
       </div>
     </div>
   </body>
