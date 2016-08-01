@@ -10,6 +10,5 @@
 /*global angular*/
  angular.module('myApp',['ionic']).config(['$controllerProvider', function($controllerProvider) {
 	$controllerProvider.allowGlobals();
-     window.location.href = 'MainMenu.html';  //default index.html
 }]);
 

@@ -9,11 +9,11 @@
  {
 
 
-     /* button  #btncoop */
-    $(document).on("click", "#btncoop", function(evt)
+     /* button  #btnCoopDetail */
+    $(document).on("click", "#btnCoopDetail", function(evt)
     {
         /* your code goes here */
-         return false;
+        window.location.href = 'coopDetail.html';
     });
 
     }
