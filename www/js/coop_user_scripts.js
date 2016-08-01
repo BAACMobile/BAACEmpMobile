@@ -8,12 +8,26 @@
  function register_event_handlers()
  {
 
+        /* graphic button  #btnCoopDetailImg */
+    $(document).on("click", "#btnCoopDetailImg", function(evt)
+    {
+        window.location.href = 'coopDetail.html';
+        /* your code goes here */
+         return false;
+    });
 
-     /* button  #btnCoopDetail */
-    $(document).on("click", "#btnCoopDetail", function(evt)
+         $(document).on("click", "#btnLoanDetail", function(evt)
+    {
+        window.location.href = 'coopLoan.html';
+        /* your code goes here */
+         return false;
+    });
+        /* graphic button  #btnCoopDep */
+    $(document).on("click", "#btnCoopDep", function(evt)
     {
         /* your code goes here */
-        window.location.href = 'coopDetail.html';
+        window.location.href = 'coopDep.html';
+         return false;
     });
 
     }

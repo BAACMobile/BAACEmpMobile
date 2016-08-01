@@ -336,3 +336,49 @@ body#afui .splt {
     margin-bottom: 6px;
   }
 }
+@media all {
+  .btnRound {
+    height: 100px !important;
+    width: 100px !important;
+    border-radius: 100%  100% 100% 100%  100% 100% 100%  100% 100% 100% !important;
+  }
+}
+@media all {
+  .default-graphic-button {
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+}
+@media all {
+  .hover-graphic-button:hover {
+    border-radius: 5px;
+    background-color: ;
+  }
+}
+@media all {
+  .active-graphic-button:active {
+    border-radius: 5px;
+    background-color: ;
+  }
+}
+@media all {
+  .default-graphic-text {
+    text-align: center;
+  }
+}
+@media all {
+  .default-graphic-sizing {
+    width: 150px  !important;
+    -webkit-flex: 0 0 auto !important;
+    -moz-flex: 0 0 auto !important;
+    -ms-flex: 0 0 auto !important;
+    -o-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
+    padding: 5px 5px 5px 5px;
+  }
+}
+@media all {
+  .default-image-sizing > img {
+    width: 150px;
+  }
+}
