@@ -2,6 +2,7 @@
 <html>
 
   <head>
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
     <link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css">
     <link rel="stylesheet" type="text/css" href="css/EmpDetail_main.less.css" class="main-less">
     <link rel="stylesheet" type="text/css" href="css/EmpDetail_main.less.css" class="main-less">
@@ -16,20 +17,53 @@
     <script type="application/javascript" src="marginal/marginal-position.js"></script>
     <script type="application/javascript" src="ionic/js/ionic.bundle.js"></script>
     <script type="application/javascript" src="js/EmpDetail_init_services.js"></script>
+    <script type="text/javascript">
+      function ShowDetail() {
+                $('#persondetail').empty();
+                $("#persondetail").append('<li>รหัสพนักงาน : 4500120</li>');
+                $("#persondetail").append('<li>ชื่อ-สกุล : นายสุชาติ สุขสมโภชน์</li>');
+                $("#persondetail").append('<li>ตำแหน่ง : พนักงานระบบงานคอมพิวเตอร์ 7</li>');
+                $("#persondetail").append('<li>สังกัด : ฝ่ายเทคโนโลยีสารสนเทศ</li>');
+                $("#persondetail").append('<li>เลขที่บัตรประชาชน : 5-1002-00077-39-7</li>');
+                $("#persondetail").append('<li>วันเกิด : 15 กรกฎาคม 2510</li>');
+                $("#persondetail").append('<li>เชื้อชาติ : ไทย</li>');
+                $("#persondetail").append('<li>ศาสนา : พุทธ</li>');
+                $("#persondetail").append('<li>หมู่โลหิต : โอ</li>');
+                $("#persondetail").append('<li>สถานภาพสมรส : สมรส</li>');
+                $("#persondetail").append('<li>ที่อยู่ : 7/45 ต.บางใหญ่ อ.บางใหญ่ จ.นนทบุรี</li>');
+                $("#persondetail").append('<li>เลขที่บัญชีเงินฝาก : 9999-2-99999-9</li>');
+                $("#persondetail").append('<li>อีเมลล์ : prototype@baac.or.th          </li>');
+                $("#persondetail").append('<li>เบอร์โทรศัพท์ : 087-254-1122</li>');
+                $('#persondetail').listview('refresh');
+            }
+        function EmpDetailBack(){
+                window.location.href = 'MainMenu.html';
+                return false;
+        }
+    </script>
   </head>
 
-  <body ng-app="myApp">
+  <body ng-app="myApp" onload="ShowDetail();">
 
     <div class="upage" id="mainpage">
       <div class="upage-outer">
         <div class="upage-content ac0 content-area vertical-col left" id="page_55_28">
-          <button class="button widget uib_w_2 d-margins" data-uib="ionic/button" data-ver="0">Button</button>
+
+          <ul data-role="listview" data-inset="true" id="persondetail" class="item widget uib_w_3 style-39" data-uib="ionic/list_item" data-ver="0"></ul>
+
         </div>
-        <ion-header-bar class="bar inner-element uib_w_1 bar-positive bar-header" data-uib="ionic/header" data-ver="0">
-          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+        <ion-header-bar class="bar inner-element uib_w_1 bar-positive bar-header" data-uib="ionic/header" data-ver="0" align-title="center">
           <h1 class="title">รายละเอียดพนักงาน</h1>
+          <div class="buttons widget-container content-area horiz-area wrapping-col">
+            <button class="button widget uib_w_2 d-margins ion ion-close-round" data-uib="ionic/button" data-ver="0" onclick="EmpDetailBack();"></button>
+          </div>
           <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
         </ion-header-bar>
+        <ion-footer-bar class="bar inner-element uib_w_6 bar-positive bar-footer" data-uib="ionic/footer" data-ver="0">
+          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+          <h1 class="title">Baac Mobile</h1>
+          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+        </ion-footer-bar>
       </div>
     </div>
   </body>
