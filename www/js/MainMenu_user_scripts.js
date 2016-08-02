@@ -8,35 +8,30 @@
  function register_event_handlers()
  {
 
-
-     /* button  #btnEmpDetail */
-    $(document).on("click", "#btnEmpDetail", function(evt)
+        /* graphic button  รายละเอียดพนักงาน */
+    $(document).on("click", ".uib_w_8", function(evt)
     {
-        /* your code goes here */
         window.location.href = 'EmpDetail.html';
          return false;
     });
 
-        /* button  #btnCoop */
-    $(document).on("click", "#btnCoop", function(evt)
+        /* graphic button  #btnLoanFund */
+    $(document).on("click", "#btnLoanFund", function(evt)
     {
-        /* your code goes here */
-        window.location.href = 'coop.html';
-         return false;
-    });
-
-        /* button  #btnLoanFun */
-    $(document).on("click", "#btnLoanFun", function(evt)
-    {
-        /* your code goes here */
         window.location.href = 'LoanFund.html';
          return false;
     });
 
-        /* button  #btnBenefits */
-    $(document).on("click", "#btnBenefits", function(evt)
+        /* graphic button  #btnCoop */
+    $(document).on("click", "#btnCoop", function(evt)
     {
-        /* your code goes here */
+        window.location.href = 'coop.html';
+         return false;
+    });
+
+        /* graphic button  #btnBenefit */
+    $(document).on("click", "#btnBenefit", function(evt)
+    {
         window.location.href = 'Benefits.html';
          return false;
     });
