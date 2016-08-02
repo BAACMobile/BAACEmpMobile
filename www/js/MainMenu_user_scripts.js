@@ -36,6 +36,13 @@
          return false;
     });
 
+        /* graphic button  #btnEmp */
+    $(document).on("click", "#btnEmp", function(evt)
+    {
+         window.location.href = 'EmpDetail.html';
+         return false;
+    });
+
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
