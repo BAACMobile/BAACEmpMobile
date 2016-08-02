@@ -21,6 +21,7 @@
     <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
     <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
     <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+    <script type="application/javascript" src="js/coopDetail_user_scripts.js"></script>
   </head>
 
   <body ng-app="myApp">
@@ -37,9 +38,17 @@
             </div>
           </div>
 
-          <div class="tarea widget uib_w_1 d-margins txtHeader" data-uib="media/text" data-ver="0" name="uib_w_1" style="background-color:rgba(0,0,0,0.2);border-radius: 10px;margin-top:30px;">
+          <div class="tarea widget uib_w_1 d-margins txtHeader" data-uib="media/text" data-ver="0" name="uib_w_1" style="background-color:rgba(0,0,0,0.2);border-radius: 10px;margin-top:30px;text-align:center;">
             <br>
-
+            <div>
+              เลขที่สมาชิก :<span><label id="txt-CoopID"></label></span>
+            </div>
+            <div>
+              รหัสพนักงาน :<span><label id="txt-EmpID"></label></span>
+            </div>
+            <div>
+              วันที่เริ่มเป็นสมาชิก :<span><label id="txt-registDate"></label></span>
+            </div>
             <br>
           </div>
 
@@ -58,8 +67,28 @@
         <ion-header-bar class="bar inner-element uib_w_8 bar-balanced bar-header" data-uib="ionic/header" data-ver="0">
           <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
           <h1 class="title">สหกรณ์ออมทรัพย์</h1>
-          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+          <div class="buttons widget-container content-area horiz-area wrapping-col">
+            <button class="button widget uib_w_39 d-margins ion ion-navicon-round" data-uib="ionic/button" data-ver="0" id="btnShowSidebar"></button>
+          </div>
         </ion-header-bar>
+
+        <div class="inner-element uib_w_25 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':300, 'side':'left', 'dur':250}" id="uib_sidebar">
+          <div class="sidebar-content content-area vertical-col">
+
+            <ion-item class="item widget uib_w_33 item-icon-left d-margins item-icon-right" data-uib="ionic/list_item_icon" data-ver="0" id="btnLoanFund" ng-href="MainMenu.html"><i class="icon ion-home ion" uib-icon-position="left"></i>เมนูหลัก<i class="icon ion-ios7-arrow-forward ion" uib-icon-position="right"></i>
+            </ion-item>
+            <ion-item class="item widget uib_w_34 item-icon-left d-margins item-icon-right" data-uib="ionic/list_item_icon" data-ver="0" ng-href="EmpDetail.html"><i class="icon ion-android-social-user ion" uib-icon-position="left"></i>รายละเอียดพนักงาน<i class="icon ion-ios7-arrow-forward ion" uib-icon-position="right"></i>
+            </ion-item>
+            <ion-item class="item widget uib_w_35 item-icon-left d-margins item-icon-right" data-uib="ionic/list_item_icon" data-ver="0"><i class="icon ion-social-usd ion" uib-icon-position="left"></i>กองทุนกู้ยืม<i class="icon ion-ios7-arrow-forward ion" uib-icon-position="right"></i>
+            </ion-item>
+            <ion-item class="item widget uib_w_36 item-icon-left d-margins" data-uib="ionic/list_item_icon" data-ver="0"><i class="icon ion-ios7-telephone ion" uib-icon-position="left"></i>List item<span class="item-note">Grammy</span>
+            </ion-item>
+            <ion-item class="item widget uib_w_37 item-icon-left d-margins" data-uib="ionic/list_item_icon" data-ver="0"><i class="icon ion-ios7-telephone ion" uib-icon-position="left"></i>List item<span class="item-note">Grammy</span>
+            </ion-item>
+            <ion-item class="item widget uib_w_38 item-icon-left d-margins item-icon-right" data-uib="ionic/list_item_icon" data-ver="0"><i class="icon ion-log-out ion" uib-icon-position="left"></i>ออกจากระบบ<i class="icon ion-ios7-arrow-forward ion" uib-icon-position="right"></i>
+            </ion-item>
+          </div>
+        </div>
       </div>
 
       <br>
