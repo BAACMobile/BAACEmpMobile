@@ -321,12 +321,30 @@ body#afui .splt {
 }
 @media all {
   .wrapping-col > .d-margins,
-  .wrapping-col > .afScrollPanel > .d-margins {
+  .wrapping-col > .afScrollPanel > .d-margins,
+  .vertical-col > .d-margins,
+  .vertical-col > .afScrollPanel > .d-margins {
     margin-left: 6px;
     margin-right: 6px;
   }
   .wrapping-col > .d-margins,
-  .wrapping-col > .afScrollPanel > .d-margins {
+  .wrapping-col > .afScrollPanel > .d-margins,
+  .vertical-col > .d-margins,
+  .vertical-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .wrapping-col > .d-margins,
+  .wrapping-col > .afScrollPanel > .d-margins,
+  .vertical-col > .d-margins,
+  .vertical-col > .afScrollPanel > .d-margins {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .wrapping-col > .d-margins,
+  .wrapping-col > .afScrollPanel > .d-margins,
+  .vertical-col > .d-margins,
+  .vertical-col > .afScrollPanel > .d-margins {
     margin-left: 6px;
     margin-right: 6px;
   }
@@ -1752,5 +1770,39 @@ body#afui .splt {
     left: 0px;
     height: auto !important;
     width: auto !important;
+  }
+}
+.bgheader {
+  background-color: blue;
+  color: white;
+}
+@media all {
+  .wrapping-col > .headDetailmargin,
+  .wrapping-col > .afScrollPanel > .headDetailmargin {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .wrapping-col > .headDetailmargin,
+  .wrapping-col > .afScrollPanel > .headDetailmargin {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .headDetailmargin {
+    margin-top: 20px;
+  }
+}
+@media all {
+  .wrapping-col > .margindetail,
+  .wrapping-col > .afScrollPanel > .margindetail {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .wrapping-col > .margindetail,
+  .wrapping-col > .afScrollPanel > .margindetail {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  .margindetail {
+    margin-top: 10px;
   }
 }

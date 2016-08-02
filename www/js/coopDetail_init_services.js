@@ -19,11 +19,11 @@
 		$.getJSON(serviceURL, function(data) {
 			$.each(data, function(index, data_obj) {
 				//alert(data_obj.CoopID);
-        document.getElementById("txt-CoopID").innerHTML =  data_obj.CoopID ;
+        //document.getElementById("txt-CoopID").innerHTML =  data_obj.CoopID ;
 
-        document.getElementById("txt-ownShares").innerHTML =  data_obj.ownShares + ' บาท';
-        document.getElementById("txt-instanceShares").innerHTML =  data_obj.instanceShares + ' บาท';
-        document.getElementById("txt-lastInstance").innerHTML =  data_obj.lastInstance + ' บาท';
+    document.getElementById("txt-ownShares").innerHTML =  data_obj.ownShares + ' บาท';
+    document.getElementById("txt-instanceShares").innerHTML =  data_obj.instanceShares + ' บาท';
+    document.getElementById("txt-lastInstance").innerHTML =  data_obj.lastInstance + ' บาท';
 				//$("#txt-phone").val(data_obj.phone);
 				});
 			});
