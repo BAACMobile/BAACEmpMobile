@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/LoanFun_main.less.css" class="main-less">
-    <link rel="stylesheet" type="text/css" href="css/LoanFun_main.less.css" class="main-less">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <head>
+        <link rel="stylesheet" type="text/css" href="ionic/css/ionic.min.css">
+        <link rel="stylesheet" type="text/css" href="css/LoanFun_main.less.css" class="main-less">
+        <link rel="stylesheet" type="text/css" href="css/LoanFun_main.less.css" class="main-less">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-    <script src="intelxdk.js"></script>
-    <script src="cordova.js"></script>
-    <script src="xhr.js"></script>
-    <script src="xdk/init-dev.js"></script>
-    <script type="application/javascript" src="lib/jquery.min.js"></script>
-    <script type="application/javascript" src="marginal/marginal-position.js"></script>
-    <script type="application/javascript" src="ionic/js/ionic.bundle.js"></script>
-    <script type="application/javascript" src="js/LoanFun_init_services.js"></script>
-  </head>
+        <script src="intelxdk.js"></script>
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="xdk/init-dev.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.js"></script>
+        <script type="application/javascript" src="ionic/js/ionic.bundle.js"></script>
+        <script type="application/javascript" src="js/LoanFun_init_services.js"></script>
+        <script type="application/javascript" src="js/LoanFund_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/ionic_subpage.js"></script>
+    </head>
 
-  <body ng-app="myApp">
+    <body ng-app="myApp">
 
-    <div class="upage" id="mainpage">
-      <div class="upage-outer">
-        <div class="upage-content ac0 content-area vertical-col left" id="page_16_64">
-          <button class="button widget uib_w_2 d-margins" data-uib="ionic/button" data-ver="0">Button</button>
+        <div class="upage" id="mainpage">
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left" id="page_16_64">
+                    <div class="tabs widget uib_w_5 d-margins tabs-icon-top" data-uib="ionic/tab_bar" data-ver="0"><a class="tab-item widget uib_w_6" data-uib="ionic/tab_item" data-ver="0" id="report1" href="#repor1"><i class="icon ion-document-text ion"></i>ข้อมูลสัญญาเงินกู้ยืม</a>
+                        <a class="tab-item widget uib_w_7" data-uib="ionic/tab_item" data-ver="0" id="report2"><i class="icon ion-ios7-copy-outline ion"></i>สถาณะสัญญา</a>
+                    </div>
+                    <div id="repor1" style="display: table;margin-right: auto;margin-left: auto;width:auto" class="ui-btn ui-btn-icon-left ui-icon-grid ui-btn-active">
+                        <table style="border:0px">
+                            <tbody>
+                                <tr>
+                                    <td style="border:0px">
+                                        ข้อมูล ณ วันที่ :
+                                    </td>
+                                    <td style="border:0px">
+                                        01/01/2016
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="repor2" style="display: table;margin-right: auto;margin-left: auto;width:auto" class="ui-btn ui-btn-icon-left ui-icon-grid ui-btn-active">
+                        <table style="border:0px">
+                            <tbody>
+                                <tr>
+                                    <td style="border:0px">
+                                        เลขที่สัญญา :
+                                    </td>
+                                    <td style="border:0px">
+                                        จำนวนเงินต้น
+                                    </td>
+                                    <td style="border:0px">
+                                        หนี้คงเหลือ
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="button widget uib_w_4 d-margins" data-uib="ionic/button" data-ver="0" id="BtnBack">Back</button>
+                </div>
+                <ion-header-bar class="bar inner-element uib_w_1 bar-positive bar-header" data-uib="ionic/header" data-ver="0">
+                    <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+                    <h1 class="title">รายงานกองทุนสวัสดิการพนักงาน</h1>
+                    <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
+                </ion-header-bar>
+            </div>
         </div>
-        <ion-header-bar class="bar inner-element uib_w_1 bar-positive bar-header" data-uib="ionic/header" data-ver="0">
-          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
-          <h1 class="title">กองทุนกู้ยืม</h1>
-          <div class="buttons widget-container content-area horiz-area wrapping-col"></div>
-        </ion-header-bar>
-      </div>
-    </div>
-  </body>
+    </body>
 
 </html>
