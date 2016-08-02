@@ -10,5 +10,19 @@
 /*global angular*/
  angular.module('myApp',['ionic']).config(['$controllerProvider', function($controllerProvider) {
 	$controllerProvider.allowGlobals();
+
+     //var policyNo = document.getElementById("txt-policyNo").value;
+		//var citizenID = document.getElementById("txt-citizenID").value;
+		//alert(policyNo+"|"+citizenID);
+		var serviceURL = "http://localhost:19478/coopdetail/12345";
+		//alert(serviceURL);
+		$.getJSON(serviceURL, function(data) {
+			$.each(data, function(index, data_obj) {
+				//alert(data_obj.CoopID);
+				$("#txt-CoopID").val(data_obj.CoopID);
+				//$("#txt-phone").val(data_obj.phone);
+				});
+			});
+
 }]);
 
